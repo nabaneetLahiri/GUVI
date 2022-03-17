@@ -117,10 +117,10 @@ if __name__ == "__main__":
             login()
             
         elif n=="3":
-            user=input("Enter email")
+            user=input("Enter email\n")
             if not validate(user):
                 print("Email doesnt exist")
             else:    
-                forgotpass(user)
+                print(forgotpass(user))
         else:
             break
