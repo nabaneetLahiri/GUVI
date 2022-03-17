@@ -110,13 +110,13 @@ if __name__ == "__main__":
     print("Welcome!")
     while True:
         print("Menu:\n1. Register\n2. Login\n3. Forgot Password?\nAny other character to exit\n")
-        n=int(input())
-        if n==1:
+        n=input()
+        if n=="1":
             register()
-        elif n==2:
+        elif n=="2":
             login()
             
-        elif n==3:
+        elif n=="3":
             user=input("Enter email")
             if not validate(user):
                 print("Email doesnt exist, please register")
